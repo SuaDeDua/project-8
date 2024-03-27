@@ -1,3 +1,3 @@
 Khởi động dự án chạy file sass:
-
 npm start
+Nếu thêm favicon vào mà không hiển thị trên đầu thì vào view source (ctrl+u) check xem đã đúng đường link hay chưa nếu đúng rồi thì ấn lại ctrl+shift+R
