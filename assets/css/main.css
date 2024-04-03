@@ -143,12 +143,6 @@ table {
   box-sizing: border-box;
 }
 
-:root {
-  --text-color: #ff0000;
-  --icon-color: brightness(0) saturate(100%) invert(12%) sepia(99%)
-    saturate(4044%) hue-rotate(355deg) brightness(120%) contrast(119%);
-}
-
 html {
   font-size: 62.5%;
 }
@@ -171,6 +165,7 @@ select {
   font-family: inherit;
   border: none;
   outline: none;
+  color: inherit;
   background: transparent;
 }
 
@@ -1209,6 +1204,18 @@ select {
     --grid-gutter-y: 90px;
   }
 }
+html.dark {
+  --text-color: #ffff;
+  --icon-color: brightness(0) saturate(100%) invert(10%) sepia(20%)
+    saturate(1580%) hue-rotate(210deg) brightness(90%) contrast(98%);
+}
+
+html {
+  --text-color: #1a162e;
+  --icon-color: brightness(0) saturate(100%) invert(10%) sepia(20%)
+    saturate(1580%) hue-rotate(210deg) brightness(90%) contrast(98%);
+}
+
 /* Buttons */
 .btn {
   padding: 10px 20px;
@@ -1223,7 +1230,6 @@ select {
   gap: 14px;
 }
 .logo__title {
-  color: #1a162e;
   /* Bold 22 */
   font-size: 2.2rem;
   font-weight: 700;
@@ -1245,7 +1251,7 @@ select {
 
 .navbar {
   margin-left: 144px;
-  margin-left: auto;
+  margin-right: auto;
 }
 .navbar__list {
   gap: 30px;
@@ -1276,6 +1282,7 @@ select {
 }
 .top-act__btn {
   padding: 13px 20px;
+  cursor: pointer;
 }
 .top-act__title {
   /* Medium 15 */

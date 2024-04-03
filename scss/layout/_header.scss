@@ -14,7 +14,7 @@
 
 .navbar {
   margin-left: 144px;
-  margin-left: auto;
+  margin-right: auto;
 
   &__list {
     @extend %flexItemCenter;
@@ -56,6 +56,7 @@
   &__btn {
     padding: 13px 20px;
     @extend %flexItemCenter;
+    cursor: pointer;
   }
 
   &__title {

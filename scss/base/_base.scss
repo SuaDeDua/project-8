@@ -5,12 +5,6 @@
   box-sizing: border-box;
 }
 
-:root {
-  --text-color: #ff0000;
-  --icon-color: brightness(0) saturate(100%) invert(12%) sepia(99%)
-    saturate(4044%) hue-rotate(355deg) brightness(120%) contrast(119%);
-}
-
 html {
   font-size: 62.5%;
 }
@@ -33,8 +27,9 @@ select {
   font-family: inherit;
   border: none;
   outline: none;
+  color: inherit;
   background: transparent;
 }
-.icon{
-    filter: var(--icon-color);
+.icon {
+  filter: var(--icon-color);
 }
