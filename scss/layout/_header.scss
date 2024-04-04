@@ -1,10 +1,12 @@
+@use "../abstracts";
+
 %flexItemCenter {
   display: flex;
   align-items: center;
 }
 
 .header {
-  background-color: #eee;
+  background-color: var(--header-bg-color);
 }
 
 .top-bar {
@@ -45,8 +47,8 @@
     height: 50px;
 
     border-radius: 8px;
-    background: #fff;
-    box-shadow: 0px 20px 60px 10px rgba(237, 237, 246, 0.2);
+    background: var(--top-act-group-bg-color);
+    box-shadow: 0px 20px 60px 10px var(--top-act-group-shadow);
   }
 
   &__group--single &__btn {
@@ -57,6 +59,7 @@
     padding: 13px 20px;
     @extend %flexItemCenter;
     cursor: pointer;
+    gap: 10px;
   }
 
   &__title {
@@ -67,7 +70,7 @@
   }
 
   &__separate {
-    background: #ededf6;
+    background: var(--top-act-group-separate);
     width: 1px;
     height: 30px;
   }

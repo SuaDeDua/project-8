@@ -1206,14 +1206,22 @@ select {
 }
 html.dark {
   --text-color: #ffff;
-  --icon-color: brightness(0) saturate(100%) invert(10%) sepia(20%)
-    saturate(1580%) hue-rotate(210deg) brightness(90%) contrast(98%);
+  --icon-color: brightness(0) saturate(100%) invert(100%) sepia(0%)
+    saturate(7484%) hue-rotate(349deg) brightness(104%) contrast(101%);
+  --header-bg-color: #171c28;
+  --top-act-group-bg-color: #292e39;
+  --top-act-group-shadow: rgba(0, 0, 0, 0.2);
+  --top-act-group-separate: #ededf6;
 }
 
 html {
   --text-color: #1a162e;
   --icon-color: brightness(0) saturate(100%) invert(10%) sepia(20%)
     saturate(1580%) hue-rotate(210deg) brightness(90%) contrast(98%);
+  --header-bg-color: #eee;
+  --top-act-group-bg-color: #fff;
+  --top-act-group-shadow: rgba(237, 237, 246, 0.2);
+  --top-act-group-separate: #ededf6;
 }
 
 /* Buttons */
@@ -1242,7 +1250,7 @@ html {
 }
 
 .header {
-  background-color: #eee;
+  background-color: var(--header-bg-color);
 }
 
 .top-bar {
@@ -1274,8 +1282,8 @@ html {
   min-width: 50px;
   height: 50px;
   border-radius: 8px;
-  background: #fff;
-  box-shadow: 0px 20px 60px 10px rgba(237, 237, 246, 0.2);
+  background: var(--top-act-group-bg-color);
+  box-shadow: 0px 20px 60px 10px var(--top-act-group-shadow);
 }
 .top-act__group--single .top-act__btn {
   padding: 13px;
@@ -1283,6 +1291,7 @@ html {
 .top-act__btn {
   padding: 13px 20px;
   cursor: pointer;
+  gap: 10px;
 }
 .top-act__title {
   /* Medium 15 */
@@ -1291,7 +1300,7 @@ html {
   line-height: 146.667%; /* 146.667% */
 }
 .top-act__separate {
-  background: #ededf6;
+  background: var(--top-act-group-separate);
   width: 1px;
   height: 30px;
 }
