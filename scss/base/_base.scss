@@ -12,7 +12,8 @@ html {
 body {
   font-size: 1.6rem;
   font-family: "Gordita", sans-serif;
-  color: var(--body-bg);
+  background-color: var(--body-bg);
+  color: var(--text-color);
 }
 
 a {
