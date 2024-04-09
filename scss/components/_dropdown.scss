@@ -1,4 +1,63 @@
-.dropdown{
+.dropdown {
+  position: absolute;
+  left: 0;
+
+  width: min(1240px, 100%);
+  padding-top: 54px;
+  display: none;
+
+  &__inner {
+    position: relative;
+
+    height: min(582px, 100vh - 158px); //1
+    padding: 30px;
+
+    border-radius: 20px;
+    background: var(--dropdown-bg-color);
+    box-shadow: 0px 40px 90px 20px var(--dropdown-shadow-color);
+
+    &::before {
+      content: url("../icons/dropdown-arrow.svg");
+      position: absolute;
+      top: -13px;
+      left: var(--arrow-left-pos);
+      translate: -50%;
+      filter: var(--dropdown-arrow-color);
+    }
+  }
+}
+
+.top-menu {
+  height: 100%;
+
+  &__main {
+    width: 292px;
+    height: 100%;
+    border-right: 1px solid var(--top-menu-border-color);
+    overflow-y: auto;
+  }
+}
+
+.menu-column {
+  &__icon {
+    position: relative;
+    width: 36px;
+    height: 36px;
+  }
+
+  &__icon-1 {
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+  }
+
+  &__icon-2 {
     position: absolute;
-    left: 0;
+    right: 0;
+    bottom: 0;
+    
+    width: 24px;
+    height: 24px;
+    object-fit: cover;
+  }
 }
