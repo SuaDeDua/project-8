@@ -4,4 +4,5 @@ npm run sass
 Nếu thêm favicon vào mà không hiển thị trên đầu thì vào view source (ctrl+u) check xem đã đúng đường link hay chưa nếu đúng rồi thì ấn lại ctrl+shift+R
 'Cách để chèm thêm 1 thẻ bọc ở bên ngoài': f1>dùng emmet wrap with abbreviation
 Muốn tìm nhanh 1 cái gì đó trong toàn bộ tất cả file dự án ấn ctrl+p -> %nội dung
+'cài đặt ban đầu để commit được:' https://git-scm.com/book/en/v2/Getting-Started-First-Time-Git-Setup https://stackoverflow.com/questions/22058041/commit-without-setting-user-name-and-email
 //1 : để dropdown fill theo màn hình không bị tràn ra (100vh - chiều cao header - khoảng cách header đến dropdown)
