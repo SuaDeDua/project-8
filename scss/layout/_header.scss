@@ -36,7 +36,7 @@
 }
 
 .navbar {
-  margin-left: 144px;
+  margin-left: 129px;
 
   @include abstracts.breakpoint(xl) {
     margin-left: 50px;
@@ -51,13 +51,6 @@
   }
 
   &__item {
-    &:first-child a {
-      padding-left: 0;
-    }
-
-    &:last-child a {
-      padding-right: 0;
-    }
 
     &:hover .dropdown {
       display: block;

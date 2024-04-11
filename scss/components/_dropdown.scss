@@ -4,13 +4,16 @@
 
   width: min(1240px, 100%);
   padding-top: 54px;
-  display: none;
+  // display: none;
 
   &__inner {
+    --inner-max-height: min(582px, 100vh - 158px);
+    --inner-padding: 30px
+
     position: relative;
 
-    max-height: min(582px, 100vh - 158px); //1
-    padding: 30px;
+    max-height: var(--inner-max-height); //1
+    padding: var(--inner-padding);
 
     border-radius: 20px;
     background: var(--dropdown-bg-color);
@@ -28,11 +31,13 @@
 }
 
 .top-menu {
-  height: 100%;
+  max-height: calc(var(--inner-max-height) - var(--inner-padding) * 2);
+
+  position: relative;
 
   &__main {
     width: 292px;
-    height: 100%;
+    max-height: inherit;
     border-right: 1px solid var(--top-menu-border-color);
     overflow-y: auto;
   }
