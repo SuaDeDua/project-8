@@ -15,9 +15,12 @@ html.dark {
   }
 
   //dropdown
+  --text-color-menu-column: #B9BABE;
   --dropdown-bg-color: #2f3441;
   --dropdown-shadow-color: rgba(23, 28, 40, 0.4);
   --dropdown-arrow-color: brightness(0) saturate(100%) invert(18%) sepia(16%)
     saturate(649%) hue-rotate(185deg) brightness(98%) contrast(94%);
   --top-menu-border-color: #171c28;
+  --menu-column-icon-color: brightness(0) saturate(100%) invert(98%) sepia(53%)
+    saturate(741%) hue-rotate(198deg) brightness(106%) contrast(94%);
 }
